@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+
+      @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 100;
+          src: local('Roboto Thin'), local('Roboto-Thin'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/vzIUHo9z-oJ4WgkpPOtg1_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+      }
+      @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 300;
+          src: local('Roboto Light'), local('Roboto-Light'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+      }
+      @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+      }
+      @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Roboto Bold'), local('Roboto-Bold'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+      }
+      @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 900;
+          src: local('Roboto Black'), local('Roboto-Black'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+      }
+
+      body {
+          font-family: 'Roboto';
+          font-size: 18px;
+          font-weight: 300;
+          margin: 0px;
+          width: 410px;
+      }
+
+      a {
+          color: #da552f;
+          text-decoration: none;
+          font-weight: 400;
+      }
+
+      b {
+          font-weight: 400;
+      }
+
+      h2 {
+          font-size: 16px;
+          font-family: 'Roboto';
+          font-weight: 400;
+          margin: 0px;
+      }
+
+      .comment {
+          width: 400px;
+          padding: 10px;
+          background-color: #ffffff;
+          text-align: center;
+      }
+
+      .comment--header {
+          height: 50px;
+          padding-bottom: 5px;
+          margin: 0px;
+          border-top: solid 1px #e7e7e7;
+      }
+
+      .comment--header--vote-arrow {
+          width: 40px;
+          height: 10px;
+          margin-bottom: 10px;
+          display: block;
+          text-align: center;
+      }
+      svg {
+          width: 10px;
+          height: 9px;
+          overflow: visible;
+      }
+
+
+      .comment--header--vote-button {
+          margin-right: 10px;
+          width: 40px;
+          float: left;
+          text-align: center;
+      }
+
+      .comment--header--logo {
+          margin-top: 5px;
+          margin-right: 5px;
+          float: right;
+      }
+
+      .highlight {
+          background-color: #EF7F5F;
+      }
+
+      .comment--content {
+          font-family: 'Roboto';
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin: 0px;
+      }
+
+      .comment--header--avatar {
+          display: inline-block;
+          margin-top: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          vertical-align: middle;
+          text-align: center;
+          width: 100%;
+      }
+
+      .comment--header--avatar img {
+          /*border-radius: 50%;
+          float: left;*/
+      }
+
+      .subtext {
+          font-size: 12px;
+          margin: 0px;
+          color: #888888;
+          font-weight: 300;
+      }
+
+      .comment--header--post-title {
+          font-size: 16px;
+          display: inline-block;
+          margin-top: 5px;
+          margin-left: 5px;
+      }
+
+
+      .left {
+          text-align: left;
+      }
+
+
+
+  </style>
+</head>
+<body>
+<div class="comment" style="min-height: <%= options[:min_height] || 75 %>px">
+  <div class="comment--header--post-title">
+    <h2><img width=50 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png" /></h2>
+
+
+  </div>
+  <div class="comment--content">
+    <p>
+      <%= options[:message] %>
+    </p>
+  </div>
+  <div class="comment--header">
+    <div class="comment--header--avatar">
+      <br />
+      <img width=80 src="http://netdna.webdesignerdepot.com/uploads/circular_logos/Accelrys.jpg" />
+    </div>
+    <div class="comment--header--post-title">
+      <p class="subtext">
+        www.myurl.pk</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
